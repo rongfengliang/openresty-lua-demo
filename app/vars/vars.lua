@@ -14,5 +14,7 @@ local function vars()
         ngx.say(result.token..result.a)
     end
     --ngx.say(json.encode(result))
+
+    ngx.log(ngx.DEBUG,ngx.req.raw_header())
 end
 return vars
