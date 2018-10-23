@@ -3,7 +3,8 @@ services:
    api:
      image: openresty/openresty:alpine
      ports:
-     - "8080:80"
+     - "8180:80"
+     - "8120:8080"
      volumes:
      - "./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf"
      - "./app/:/opt/app/"
