@@ -1,7 +1,8 @@
 version: "3"
 services:
    api:
-     image: openresty/openresty:alpine
+     image: dalongrong/openresty-graphql
+     build: ./
      ports:
      - "8180:80"
      - "8120:8080"
