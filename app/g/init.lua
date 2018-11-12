@@ -10,6 +10,8 @@ query getUser($id: ID) {
   person(id: $id) {
     firstName
     lastName
+    id
+    age
   }
 }
 ]]
